@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeadSphere CRM - Convert More Leads</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset */
+        * {margin:0; padding:0; box-sizing:border-box;}
+        body {font-family: 'Roboto', sans-serif; color:#343A40; line-height:1.6; background:#f9f9f9;}
+        a {text-decoration:none; color:inherit;}
+        img {max-width:100%; display:block;}
+        
+        /* Colors */
+        :root {
+            --primary:#007BFF;
+            --secondary:#28A745;
+            --dark:#343A40;
+            --light:#FFFFFF;
+            --bg:#f9f9f9;
+        }
+
+        /* Header */
+        header {background:var(--light); padding:20px 50px; display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; z-index:100; box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+        header .logo {font-weight:700; font-size:24px; color:var(--primary);}
+        header nav a {margin:0 15px; font-weight:500; color:var(--dark);}
+        header nav a:hover {color:var(--primary);}
+        .btn {padding:12px 25px; border:none; border-radius:5px; font-weight:500; cursor:pointer;}
+        .btn-primary {background:var(--primary); color:#fff;}
+        .btn-secondary {background:var(--secondary); color:#fff;}
+
+        /* Hero Section */
+        .hero {background:var(--primary); color:#fff; padding:100px 50px; text-align:center;}
+        .hero h1 {font-size:48px; margin-bottom:20px;}
+        .hero p {font-size:20px; margin-bottom:30px;}
+        .hero .hero-btns .btn {margin:0 10px; font-size:18px;}
+
+        /* Section styles */
+        section {padding:80px 50px; text-align:center;}
+        section h2 {font-size:36px; margin-bottom:30px; color:var(--dark);}
+        section p {font-size:18px; max-width:800px; margin:0 auto 30px;}
+
+        /* Benefits / Services / USP */
+        .cards {display:flex; flex-wrap:wrap; justify-content:center; gap:30px; margin-top:40px;}
+        .card {background:#fff; padding:30px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1); flex:1 1 250px; max-width:300px; transition:transform 0.3s;}
+        .card:hover {transform:translateY(-5px);}
+        .card h3 {margin-bottom:15px; color:var(--primary);}
+        .card p {font-size:16px; color:#555;}
+
+        /* Pricing Table */
+        .pricing-table {display:flex; flex-wrap:wrap; justify-content:center; gap:30px;}
+        .pricing-card {background:#fff; padding:30px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1); flex:1 1 250px; max-width:300px; transition:transform 0.3s;}
+        .pricing-card:hover {transform:translateY(-5px);}
+        .pricing-card h3 {color:var(--primary); margin-bottom:10px;}
+        .pricing-card .price {font-size:28px; font-weight:700; margin-bottom:20px;}
+        .pricing-card ul {list-style:none; margin-bottom:20px; text-align:left; padding-left:0;}
+        .pricing-card ul li {margin-bottom:10px;}
+        .pricing-card .btn {width:100%;}
+
+        /* Contact Form */
+        .contact-form {max-width:600px; margin:0 auto; text-align:left;}
+        .contact-form input, .contact-form textarea {width:100%; padding:15px; margin-bottom:20px; border:1px solid #ccc; border-radius:5px;}
+        .contact-form button {width:100%;}
+
+        /* Footer */
+        footer {background:var(--dark); color:#fff; padding:50px; text-align:center;}
+        footer a {color:var(--secondary);}
+        footer a:hover {color:var(--primary);}
+
+        /* Responsive */
+        @media(max-width:768px){
+            .cards, .pricing-table {flex-direction:column; align-items:center;}
+            header {flex-direction:column; gap:20px;}
+            .hero h1 {font-size:36px;}
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">LeadSphere</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#why-us">Why Us</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <h1>Never Miss a Lead. Always Close More Deals.</h1>
+        <p>We manage and convert your leads so you can focus on selling.</p>
+        <div class="hero-btns">
+            <button class="btn btn-primary">Start Free Trial</button>
+            <button class="btn btn-secondary">Talk to Us on WhatsApp</button>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section id="benefits">
+        <h2>Why LeadSphere</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>No Missed Follow-Ups</h3>
+                <p>Automated reminders ensure you never lose track of your leads.</p>
+            </div>
+            <div class="card">
+                <h3>WhatsApp-First CRM</h3>
+                <p>Communicate with leads instantly on their favorite platform.</p>
+            </div>
+            <div class="card">
+                <h3>Human Support</h3>
+                <p>Real people assist you in setup, optimization, and lead recovery.</p>
+            </div>
+            <div class="card">
+                <h3>Simple & Agent-Friendly</h3>
+                <p>Start using immediately, no training or technical skills required.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>LeadSphere CRM is built for agents who want more than software. We combine smart lead management with human support to ensure you never miss a follow-up and close more deals.</p>
+        <button class="btn btn-primary">Talk to Our Team</button>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Lead Entry & Tracking</h3>
+                <p>Easily enter new leads and track their status in one place.</p>
+            </div>
+            <div class="card">
+                <h3>Follow-Up Reminders</h3>
+                <p>Daily & weekly notifications ensure timely follow-ups.</p>
+            </div>
+            <div class="card">
+                <h3>Hot/Warm/Cold Lead Management</h3>
+                <p>Prioritize leads that are most likely to convert.</p>
+            </div>
+            <div class="card">
+                <h3>Daily & Weekly Reports</h3>
+                <p>Track your performance with clear, actionable reports.</p>
+            </div>
+            <div class="card">
+                <h3>Lead Recovery System</h3>
+                <p>Revive old leads and maximize your revenue potential.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works">
+        <h2>How It Works</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>1. Capture Leads</h3>
+                <p>Add leads manually or import from your sources.</p>
+            </div>
+            <div class="card">
+                <h3>2. Organize & Track</h3>
+                <p>Categorize leads as Hot, Warm, or Cold for easy management.</p>
+            </div>
+            <div class="card">
+                <h3>3. Automate Follow-Ups</h3>
+                <p>WhatsApp messages, reminders, and notifications.</p>
+            </div>
+            <div class="card">
+                <h3>4. Human Support</h3>
+                <p>We help you setup, recover lost leads, and optimize your workflow.</p>
+            </div>
+            <div class="card">
+                <h3>5. Close Deals Faster</h3>
+                <p>Focus on high-priority leads and grow your business.</p>
+            </div>
+        </div>
+        <button class="btn btn-primary" style="margin-top:30px;">Start Free Trial</button>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why-us">
+        <h2>Why Agents Prefer LeadSphere</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>CRM + Human Support</h3>
+                <p>Not just software—real people helping you succeed.</p>
+            </div>
+            <div class="card">
+                <h3>WhatsApp-First System</h3>
+                <p>Reach leads where they respond fastest.</p>
+            </div>
+            <div class="card">
+                <h3>Simple & Agent-Friendly</h3>
+                <p>Easy to use, no technical skills needed.</p>
+            </div>
+            <div class="card">
+                <h3>Designed for Indian Agents</h3>
+                <p>Focused on your market and challenges.</p>
+            </div>
+            <div class="card">
+                <h3>Done-for-You Setup</h3>
+                <p>Start using immediately, no hassle.</p>
+            </div>
+        </div>
+        <button class="btn btn-secondary" style="margin-top:30px;">Talk to Us on WhatsApp</button>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing">
+        <h2>Simple Pricing for Every Agent</h2>
+        <p>Start your 7-day free trial today – no credit card required.</p>
+        <div class="pricing-table">
+            <div class="pricing-card">
+                <h3>Basic</h3>
+                <p class="price">₹499 / month</p>
+                <ul>
+                    <li>Lead entry & tracking</li>
+                    <li>Follow-up reminders</li>
+                    <li>WhatsApp notifications</li>
+                </ul>
+                <button class="btn btn-primary">Start Free Trial</button>
+            </div>
+            <div class="pricing-card">
+                <h3>Standard</h3>
+                <p class="price">₹999 / month</p>
+                <ul>
+                    <li>All Basic features</li>
+                    <li>Hot/Warm/Cold lead management</li>
+                    <li>Daily & weekly reports</li>
+                </ul>
+                <button class="btn btn-primary">Start Free Trial</button>
+            </div>
+            <div class="pricing-card">
+                <h3>Premium</h3>
+                <p class="price">₹1,499 / month</p>
+                <ul>
+                    <li>All Standard features</li>
+                    <li>Lead recovery system</li>
+                    <li>Done-for-you setup & priority support</li>
+                </ul>
+                <button class="btn btn-primary">Start Free Trial</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Us / Free Trial</h2>
+        <div class="contact-form">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <input type="tel" placeholder="Phone / WhatsApp">
+            <input type="text" placeholder="Company Name">
+            <textarea placeholder="Message / Inquiry" rows="5"></textarea>
+            <button class="btn btn-primary">Start Free Trial</button>
+            <button class="btn btn-secondary" style="margin-top:10px;">Talk to Us on WhatsApp</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 LeadSphere CRM. All rights reserved.</p>
+        <p>Contact: <a href="mailto:support@leadsphere.com">support@leadsphere.com</a> | Phone: +91 XXXXX XXXXX</p>
+    </footer>
+
+</body>
+</html>
